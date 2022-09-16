@@ -10,55 +10,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="banner">HASH - O OR X</div>
-        <div class="content">
-            <div class="hash">
-                <div class="line">
-                    <button class="btn" id="1"></button>
-                    <button class="btn" id="2"></button>
-                    <button class="btn" id="3"></button>
-                </div>
-                <div class="line">
-                    <button class="btn" id="4"></button>
-                    <button class="btn" id="5"></button>
-                    <button class="btn" id="6"></button>
-                </div>
-                <div class="line">
-                    <button class="btn" id="7"></button>
-                    <button class="btn" id="8"></button>
-                    <button class="btn" id="9"></button>
-                </div>
-            </div>
-            <form class="option">
-                <p class="legend">Choose one of the options</p>
-                <div class="player">
-                    <legend>Player 01: </legend>
-                    <label>X</label>
-                    <input type="radio" name="option1" id="player1_x">
-                    <span>or</span>
-                    <label>O</label>
-                    <input type="radio" name="option1" id="player1_o">
-                </div>
-                <div class="player">
-                    <legend>Player 02: </legend>
-                    <label>X</label>
-                    <input type="radio" name="option2" id="player2_x">
-                    <span>or</span>
-                    <label>O</label>
-                    <input type="radio" name="option2" id="player2_o">
-                </div>
-                <hr>
-                <button class="first" id="first">first to play</button>
-                <p class="firstResult" id="firstResult">First to play - result</p>
-                <hr>
-                <p class="winner" id="winner">winner</p>
-            </form>
+    <div class="board circle">
+        <div class="cell x" data-cell></div>
+        <div class="cell circle" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
 
-
-        </div>
-
-
+    <div class="winning-message" data-winning-message>
+        <p class="winning-message-text">X Winner!</p>
+        <button>Restart</button>
     </div>
     <script src="script.js"></script>
 </body>
