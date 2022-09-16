@@ -15,6 +15,13 @@
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .banner {
     background-color: yellowgreen;
     color: white;
@@ -28,7 +35,7 @@
     border: 1px solid black;
     width: auto;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 5px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -41,7 +48,6 @@
 }
 
 .btn {
-    border: 1px solid green;
     cursor: pointer;
     width: 80px;
     height: 80px;
@@ -54,8 +60,72 @@
     background-color: silver;
 }
 
+.option {
+    margin-left: 20px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .legend {
-    color: white;
+    color: tomato;
     margin-top: 20px;
+    font-size: 20pt;
+}
+
+.player {
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
     font-size: 14pt;
+}
+
+.player input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.player legend {
+    margin-right: 10px;
+}
+
+.player label {
+    color: yellow;
+    margin-right: 3px;
+}
+
+.player span {
+    margin-right: 10px;
+}
+
+.first {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    font-size: 14pt;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.first:hover {
+    background-color: silver;
+    font-weight: bold;
+}
+
+.firstResult {
+    margin: 20px 0px 10px 0px;
+    color: white;
+    font-size: 14pt;
+}
+
+.winner {
+    margin-top: 40px;
+    font-size: 25pt;
+    color: springgreen;
+    font-weight: bold;
 }
